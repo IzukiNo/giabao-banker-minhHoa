@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Thuật toán Banker</title>
+  <script src="banker.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Thuật toán Banker</h1>
+    
+    <div class="container">
+      <div class="main-content">
+        <label>Số tiến trình (P): 
+          <input type="number" id="pInput" value="3" min="1" max="10">
+        </label>
+        <label>Số tài nguyên (R): 
+          <input type="number" id="rInput" value="3" min="1" max="10">
+        </label>
+        <br>
+        <button onclick="genInput()">Tạo bảng</button>
+        <div id="inputArea"></div>
+      </div>
+
+      <div class="testcases">
+        <h3>Test Cases Có Sẵn</h3>
+        <button onclick="loadTestCase(1)">Test Case 1</button>
+        <button onclick="loadTestCase(2)">Test Case 2</button>
+        <button onclick="loadTestCase(3)">Test Case 3</button>
+        <button onclick="loadTestCase(4)">Test Case 4</button>
+        <button onclick="loadTestCase(5)">Test Case 5</button>
+      </div>
+    </div>
+    <div class="result">
+        <h3>Kết quả</h3>
+        <div id="outputArea"></div>
+        <pre id="output"></pre>
+    </div>
+</body>
+</html>
